@@ -47,6 +47,7 @@ deploy:
     secure: aha7ZoQ6xaT9uiWLgltCeUAWGjVkrRoKpnFmlirq+bZ7mGVLxYyB8TFKiC3id8Bji8x7pCsqdsKpeRZ4zSjmHioFv9zgZbkGxrpSuQ4Slx5HCwURsnZ7RfpY0yI4QqPx3ejYgCBqZXh2N0S+tZV833SNUhA9YfW+W5NO0l1hgOUifRTVGWIpgorODBx6q8eUi/3UvVXXaPGshjSjLWp3fQeCW8bjfaKYp6Nit1DX0BxEoOBzkunckUS/N0OoGT+Pwsae69NJWJmfVjt9go7XEP0C0yE+ayz4Ef0KcREUR4MyJISOIBvxHatiLKhquggJvFUvNwYuFq0MH2PYpJzxTxYc3ygqmygcu0FnsmHA12M2YYq829uYHCvMzHzXeGuIzFNerk/jPXX/GbWoP/vhedNKjX6Fpoy2gUlRc6D2spzehRh6bx+liGHiX6oQmNZKhsghLHTn2SvxofoAH++cQzOIrtn6i6NldcBbDvDRKXdmiH9HdEkPdbgBXn4YlXzHM/aeXNSPF+f4yYUX3X0unwQSWNhShzIMz31H2mTGgdtU+9j7hMcKgPVsYdMP7cNUdkqCIoL6BXUWtlHJaDsl3T1JmvzlORYOX7Jf6Zn9IN43P7l1/0SoGYJsrtNn+MglTDyTfBZKEgynHEtMSuxfGyAudBlQIjDWWIA5ISpvy7s=
   file:
   - dnscrypt-proxy-*.zip
+  file_glob: true
   on:
     repo: sfionov/dnscrypt-proxy
     all_branches: true
