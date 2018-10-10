@@ -49,9 +49,7 @@ deploy:
   - dnscrypt-proxy-*.zip
   on:
     repo: sfionov/dnscrypt-proxy
-    branches:
-      only:
-        - master
+    all_branches: true
 after_deploy:
 - ls -l dnscrypt-proxy-*.zip
 before_install:
