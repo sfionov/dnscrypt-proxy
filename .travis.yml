@@ -164,17 +164,12 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: J3K/wo3oW/ySl6X4Zk5PX+EVy4fa0qa4fbpKNivogch5yjYw2pgrlSvwto9TM12Gxi4tTMKiWYK4YBapNf+tm501s4OyS1G1rJR1fZ+iyaHgGBLD+QppbivZt+P7Do56agSili68Zcgm7MQfZbvOq9z42z3AJ71+UNTJmTp63voaAuyOF/VdLsmJHMd/5nmFJH6mfMrgMs720GCWxFgdq3NRM2AdVldsp1YmNb4qKqIzunmfxqG9TqVlpq35tNOhWA/Ll3rbsiDVeUpBAW5ked/qHyGRkFVk44O6cPSFGe035Txx0JviBshGxsNSP+aJL9T55hIj1dmuk6g5uhPqABU/zcdJvXOv11oqJuV/DGHO31UfVN6u744LJY6Y1lkd+UUNiOJDPGC80+6M2GbP7BFMZiO5qnYkxzktnYg9b6zIPwmj96XZSniDTAn+qemJf2S8rzShvBtWX29Q4odIaCfFUY8i0muowQ4Vep5S5FqVG+r/rQTXOUIUsNv4r/gP/y5hdtOMC2r1VSvWk068upmW6ovCtcmTghSfYcLCG5r+g5OE2mKj9kbx6RQMspewk9+pvOhNZKXsn/AIvvDC4V46MaDjFkdYN0VbsYB5NH11DGCPH7vDwJnAzzMWnofCkiTG07dJYlLUnD9iUgYoNkrxivAgQKnDP8C6Ka0RGdk=
+    secure: aha7ZoQ6xaT9uiWLgltCeUAWGjVkrRoKpnFmlirq+bZ7mGVLxYyB8TFKiC3id8Bji8x7pCsqdsKpeRZ4zSjmHioFv9zgZbkGxrpSuQ4Slx5HCwURsnZ7RfpY0yI4QqPx3ejYgCBqZXh2N0S+tZV833SNUhA9YfW+W5NO0l1hgOUifRTVGWIpgorODBx6q8eUi/3UvVXXaPGshjSjLWp3fQeCW8bjfaKYp6Nit1DX0BxEoOBzkunckUS/N0OoGT+Pwsae69NJWJmfVjt9go7XEP0C0yE+ayz4Ef0KcREUR4MyJISOIBvxHatiLKhquggJvFUvNwYuFq0MH2PYpJzxTxYc3ygqmygcu0FnsmHA12M2YYq829uYHCvMzHzXeGuIzFNerk/jPXX/GbWoP/vhedNKjX6Fpoy2gUlRc6D2spzehRh6bx+liGHiX6oQmNZKhsghLHTn2SvxofoAH++cQzOIrtn6i6NldcBbDvDRKXdmiH9HdEkPdbgBXn4YlXzHM/aeXNSPF+f4yYUX3X0unwQSWNhShzIMz31H2mTGgdtU+9j7hMcKgPVsYdMP7cNUdkqCIoL6BXUWtlHJaDsl3T1JmvzlORYOX7Jf6Zn9IN43P7l1/0SoGYJsrtNn+MglTDyTfBZKEgynHEtMSuxfGyAudBlQIjDWWIA5ISpvy7s=
   file:
   - dnscrypt-proxy-*.tar.gz
   - dnscrypt-proxy-*.zip
-  - dnscrypt-proxy-*.minisig
-  file_glob: true
-  skip_cleanup: true
   on:
-    repo: jedisct1/dnscrypt-proxy
-    condition: "${TRAVIS_GO_VERSION} == 1.11.1"
-    tags: true
+    repo: sfionov/dnscrypt-proxy
 before_deploy:
 - mkdir -p /tmp/bin /tmp/lib /tmp/include
 - export LD_LIBRARY_PATH=/tmp/lib:LD_LIBRARY_PATH
