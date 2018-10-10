@@ -172,7 +172,7 @@ deploy:
     repo: sfionov/dnscrypt-proxy
     branches:
       only:
-        - android-19-plus-deploy
+        - master
 before_deploy:
 - mkdir -p /tmp/bin /tmp/lib /tmp/include
 - export LD_LIBRARY_PATH=/tmp/lib:LD_LIBRARY_PATH
